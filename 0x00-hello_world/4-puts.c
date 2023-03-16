@@ -2,8 +2,8 @@
 
 /**
  *This program prints text with puts() function
- *main -entry point
- *Thestr[]: contains the string
+ *main - Entry point
+ *@Thestr[]: contains the string
  *
  * Return: 0 if execution is successful
  */

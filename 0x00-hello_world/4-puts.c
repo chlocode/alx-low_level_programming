@@ -1,10 +1,11 @@
 #include<stdio.h>
 
-int main()
+/*prints text*/
+
+int main(void)
 {
-	char Thestr[] = "Programming is like building a multilingual puzzle";
-	
+	char Thestr[] = \"Programming is like building a multilingual puzzle";
 	puts(Thestr);
 
-	return 0;
+	return (0);
 }

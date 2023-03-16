@@ -1,7 +1,11 @@
 #include<stdio.h>
 
 /**
- * prints text with puts() function
+ *This program prints text with puts() function
+ *main -entry point
+ *Thestr[]: contains the string
+ *
+ * Return: 0 if execution is successful
  */
 
 int main(void)

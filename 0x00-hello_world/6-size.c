@@ -14,7 +14,7 @@ int main(void)
 
 	printf("%lu\n", "size of a long long int: ", sizeof(double)), "byte(s)";
 
-	printf("%lu", "size of a float: ", sizeof(float)), "byte(s)";
+	printf("size of a float: ", "%lu", sizeof(float), "byte(s)");
 
 	return (0);
 }

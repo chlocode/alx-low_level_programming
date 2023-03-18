@@ -6,7 +6,7 @@
  * main - Entry point
  *
  * Description: This program generates a random
- * number and picks the last digit. 
+ * number and picks the last digit.
  * It then determines if the number is
  * either greater than five, zero, or less than
  * six and is not zero.
@@ -18,7 +18,7 @@ int main(void)
 	int Last_digit;
 
 	srand(time(0));
-	n = rand() -RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
 	Last_digit = n % 10;
 	if (Last_digit  > 5)
 	{

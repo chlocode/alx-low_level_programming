@@ -4,7 +4,6 @@
 
 /**
  * main - Entry point
- * @n: random number
  *
  * Description: This program generates and
  * performs arithmetic on a random mumber.
@@ -21,17 +20,17 @@ int main(void)
 	if (n > 0)
 	{
 		printf("%d", n);
-		printf("is positive");
+		printf(" is positive\n");
 	}
 	else if (n < 0)
 	{
 		printf("%d", n);
-		printf("is negative");
+		printf(" is negative\n");
 	}
 	else
 	{
 		printf("%d", n);
-		printf("is zero");
+		printf(" is zero\n");
 	}
 	return (0);
 }

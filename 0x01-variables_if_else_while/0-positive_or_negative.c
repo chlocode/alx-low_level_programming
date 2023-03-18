@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- * @n: computes a random number
+ * @n: random number
  *
  * Description: This program generates and
  * performs arithmetic on a random mumber.
@@ -18,14 +18,15 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 0) {
-		printf("is positive");
+	if (n > 0)
+		printf("%d", &n, "is positive");
+	else if (n < 0)
+	{
+		printf("%d", &n, "is negative");
 	}
-	else if (n < 0) {
-		printf("is negative");
-	}
-	else {
-		printf("is zero");
+	else
+	{
+		printf("%d", &n, "is zero");
 	}
 	return (0);
 }

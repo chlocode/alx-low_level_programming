@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	int hexa;
+	char  hexa;
 
 	for (hexa = 0 ; hexa <= 'f' ; hexa++)
 	{
-		putchar(hexa);
+		putchar((int)(hexa));
 	}
 	putchar('\n');
 	return (0);

@@ -9,9 +9,14 @@ int _abs(int b)
 {
 	int absolute;
 
-	if (b < 1)
+	if (b < 0)
 	{
 		absolute = b * -1;
+		return (absolute);
+	}
+	else
+	{
+		absolute = b;
 		return (absolute);
 	}
 	return (0);

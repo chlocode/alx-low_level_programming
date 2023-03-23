@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * print_most_numbers - prints numbers from 0-9 except 2 & 4
- * @a: variable that holds iteration values
  *
  * Return: Nothing. Void
  */

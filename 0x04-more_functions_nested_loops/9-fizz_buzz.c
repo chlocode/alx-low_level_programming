@@ -22,5 +22,6 @@ int main(void)
 		if (list < 100)
 			printf(" ");
 	}
+	printf("\n");
 	return (0);
 }

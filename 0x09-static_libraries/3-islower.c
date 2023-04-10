@@ -5,4 +5,6 @@
  *
  * Return: 0 if string is lowercase
  */
-int _islower(int c);
+int _islower(int c)
+{
+}

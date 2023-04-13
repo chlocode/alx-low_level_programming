@@ -14,7 +14,7 @@ char *str_concat(char *s1, char *s2)
 	int count = 0;
 	char *catenated;
 	int catcount;
-	
+
 	/*determine string length*/
 	while (*(s1 + count) != '\0')
 		count++;
@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	catenated = (char *) malloc(count + j);
 	if (catenated == NULL)
-		return NULL;
+		return (NULL);
 	for (catcount = 0 ; catcount < count ; ++count)
 	{
 		catenated[catcount] = s1[catcount];

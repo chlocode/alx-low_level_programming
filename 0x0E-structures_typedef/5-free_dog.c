@@ -4,7 +4,7 @@
 /**
  * free_dog - frees memory allocation
  * @d: pointer to struct
- * 
+ *
  * Return: void
  */
 void free_dog(dog_t *d)

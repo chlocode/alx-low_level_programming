@@ -15,11 +15,12 @@ void print_all(const char * const format, ...)
 	float f;
 	char *s;
 	char *format_ptr = (char *) format;
+
 	va_start(types, format);
 
 	while (*format)
 	{
-		switch(*format)
+		switch (*format)
 		{
 			case 'c':
 				c = va_arg(types, int);

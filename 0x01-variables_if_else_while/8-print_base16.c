@@ -8,11 +8,18 @@
  */
 int main(void)
 {
-	char  hexa;
+	int i = 48;
+	int hex = 97;
 
-	for (hexa = 0 ; hexa <= 'f' ; hexa++)
+	while (i <= 57)
 	{
-		putchar((int)(hexa));
+		putchar(i);
+		i++;
+	}
+	while (hex <= 102)
+	{
+		putchar (hex);
+		hex++;
 	}
 	putchar('\n');
 	return (0);

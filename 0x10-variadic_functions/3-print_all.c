@@ -14,11 +14,10 @@ void print_all(const char * const format, ...)
 	int i;
 	float f;
 	char *s;
-	char *format_ptr = (char *) format;
 
 	va_start(types, format);
 
-	while (*format)
+	while (*format != '\0')
 	{
 		switch (*format)
 		{
@@ -41,11 +40,12 @@ void print_all(const char * const format, ...)
 					printf("(nil)");
 				break;
 			default:
-				format_ptr++;
-				continue;
+				break;
 		}
-		if (*format + 1 != '\0')
+		if (*(format + 1) != '\0' && ((*format + 1) == 'c' || *(format + 1) == 'i' || *(format + 1) == 'f' || *(format + 1) == 's'))
 			printf(",");
+		format++;
 	}
 	printf("\n");
+	va_end(types);
 }

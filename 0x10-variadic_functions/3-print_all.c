@@ -14,6 +14,7 @@ void print_all(const char * const format, ...)
 	int i;
 	float f;
 	char *s;
+	const char *format_ptr = format;
 
 	va_start(args, format);
 
@@ -43,9 +44,9 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
+		format_ptr++;
 		if (*(format + 1) != '\0' && ((*format + 1) == 'c' || *(format + 1) == 'i' || *(format + 1) == 'f' || *(format + 1) == 's'))
 			printf(",");
-		format++;
 	}
 	printf("\n");
 	va_end(args);
